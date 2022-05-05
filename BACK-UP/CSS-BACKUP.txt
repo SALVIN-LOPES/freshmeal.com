@@ -1,0 +1,693 @@
+/* -------------------------------------------FONTS----------------------------------- */
+@font-face {
+    font-family:'Raleway-regular';
+    src: url(../fonts/Raleway-Regular.ttf);
+}
+@font-face {
+    font-family:'Raleway-medium';
+    src: url(../fonts/Raleway-Medium.ttf);
+}
+@font-face {
+    font-family:'Raleway-bold';
+    src: url(../fonts/Raleway-Bold.ttf);
+}
+@font-face {
+    font-family:'Raleway-semibold';
+    src: url(../fonts/Raleway-SemiBold.ttf);
+}
+@font-face {
+    font-family:'Raleway-black';
+    src: url(../fonts/Raleway-Black.ttf);
+}
+@font-face {
+    font-family: 'Raleway-extrabold';
+    src: url(../fonts/Raleway-ExtraBold.ttf);
+}
+/* -----------------------------------COLORS-------------------------------------- */
+:root{
+    --primary:#EEBF00;
+    --secondary:#232B38;
+    --ternary:#6C6C6C;
+    --danger:#FE4545;
+    --pure:#FEFEFE;
+    --light:#F0F0F0;
+    --heaven:#FFFFFF;
+    --footer:#2D333F;
+}
+/* -------------------------------------------------RESET---------------------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+                                                /* THIS IS NEW */
+body{
+    -webkit-font-smoothing:antialiAsed;
+    height: 4000px;
+    font-family:'Raleway-regular';
+}
+
+.container{
+    width: 100%;
+    padding: 0px 15px;
+    margin: 0px auto;
+
+}
+/* --------------------------------------------MEDIA QUERIES------------------------------------------ */
+
+@media (min-width:576px){
+    .container{
+        max-width:540px ;
+    }
+}
+
+@media (min-width:768px){
+    .container{
+        max-width:720px ;
+    }
+}
+
+@media (min-width:992px){
+    .container{
+        max-width:960px ;
+    }
+}
+
+@media (min-width:1200px){
+    .container{
+        max-width:1152px ;
+    }
+}
+/* --------------------------------------TOPBAR STYLING------------------------------------------- */
+.topbar{
+    background:var(--secondary);
+    color: var(--pure);
+    font-family: 'Raleway-semibold';
+    padding: 0.75rem 0rem;
+
+}
+.topbar .auth > div a{
+    color: var(--pure);
+    text-decoration: none;
+}
+.topbar .container .icons a{
+    margin-right :0.6rem; 
+    
+    
+}
+.topbar .container .auth{
+    display: flex;
+}
+.topbar .container .auth .divider{
+    padding: 0rem 1rem;
+}
+.topbar .container .auth >div img{
+    padding: 0rem 0.5rem;
+}
+/* ----------------------------------------------UTILITY CLASS----------------------------------------- */
+.flex{
+    display: flex;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.justify-center{
+    justify-content: center;
+}
+.items-center{
+    align-items: center;
+}
+.text-center{
+    text-align: center;
+}
+                                               /* THIS IS NEW */
+.magic-shadow{
+    position:relative;
+    background: var(--heaven);
+}
+.magic-shadow::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 69px;
+    background-image: url(../icons/shadow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: -22px;
+    z-index: -1;
+}
+.magic-shadow-sm{
+    position:relative;
+    background: var(--heaven);
+    
+}
+.magic-shadow-sm::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 69px;
+    background-image: url(../icons/shadow-sm.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -25px;
+    z-index: -1;
+    
+}
+.btn{
+    padding: 0.75rem 0.75rem;
+    border-radius :4px; 
+    border: 2px solid transparent;
+    line-height: 0.8;
+    font-size: 1.2rem;
+    cursor:pointer;
+    transition: all 0.3s ease;
+}
+.btn-primary{
+    background:var(--primary);
+    color: var(--heaven);
+}
+.btn-primary:hover{
+    background: var(--heaven);
+    color: var(--primary);
+    border: 2px solid var(--primary);
+}
+.btn-secondary{
+    background: var(--secondary);
+    color: var(--heaven);
+}
+.btn-secondary:hover{
+    background: var(--heaven);
+    color: var(--secondary);
+    border: 2px solid var(--secondary);
+}
+.section-heading{
+    font-family: 'Raleway-Bold';
+    text-align: center;
+    position: relative;
+    margin-bottom: 6rem;
+
+}
+.section-heading::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 30px;
+    background-image: url(../icons/hr.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: -40px;
+
+}
+                                   /* THIS IS NEW */
+.flex-1{
+    flex: 1;
+}
+.text-primary{
+    color: var(--primary);
+}
+.text-pure{
+    color: var(--pure);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------STYLING OF HERO---------------------------------------- */
+header.hero{
+    /* border: 2px solid black; */
+    height: 600px;
+    background-image: url(../images/hero.png);
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+header.hero .container{
+    position: relative;
+}
+header.hero .welcome{
+    margin-bottom: 0.25rem;
+}
+header.hero .welcome span{
+    font-family: 'Raleway-bold';
+    color: var(--secondary);
+    margin-right: 0.75rem;
+}
+header.hero h1{
+    font-family: 'Raleway-extrabold';
+    color: var(--secondary);
+    font-size: 2.5rem;
+    margin-bottom: 0.25rem;
+
+}
+header.hero h1 span{
+    color: var(--primary);
+}
+header.hero p{
+    font-family: 'Raleway-medium';
+    width: 50%;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+}
+header.hero button:first-child{
+    margin-right: 0.5rem;
+}
+header.hero .hero-image{
+    position: absolute;
+    top: -11%;
+    right: 1%;
+    /* bottom: 20%; */
+}
+/* -----------------------------------STYLING OF TOP PRODUCTS------------------------------ */
+section{
+    padding: 4rem 0rem;
+}
+section.top-products{
+    background: var(--light);
+}
+section.top-products .food-slider .food-card{
+    background: var(--heaven);
+    padding: 1.5rem 0rem;
+}
+section.top-products .food-slider .food-card .product-image img{
+    width: 100%;
+    height: 200px;
+                                 /* THIS IS NEW */
+    object-fit: contain;
+    padding-bottom: 1rem;
+}
+hr{
+    border:1px solid var(--light);
+    opacity: 0.8;
+    margin: 1rem 0rem;
+
+}
+section.top-products .food-slider .food-card{
+    display: inline-block;
+    width: 24%;
+    margin-right: 0.5rem;
+    /* border-radius: 2rem; */
+    box-shadow: 0px 0px 5px 0px var(--primary);
+}
+section.top-products .food-slider .food-card h2{
+    font-family: 'Raleway-Bold';
+    font-size: 1.3rem;
+    margin-bottom: 0.25rem;
+
+}
+section.top-products .food-slider .food-card .stars img{
+    padding-right: 0.25rem;
+}
+section.top-products .food-slider .food-card .price{
+    font-family: 'Raleway-medium';
+    color: var(--danger);
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+section.top-products .food-slider .food-card button{
+    display: flex;
+    font-family: 'Raleway-medium';
+    color: var(--secondary);
+    background: var(--heaven);
+    border: 2px solid var(--primary);
+    border-radius: 4px;
+    align-items: center;
+    width: 50%;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    height: 2.2rem;
+    width: 10rem;   
+
+}
+section.top-products .food-slider .food-card button img{
+    background: var(--primary);
+    padding: 0.5rem;
+    height: 32px;
+    margin-right: 1.2rem;
+
+}
+section.top-products .food-slider .food-card button:hover{
+    background-color: var(--primary);
+}
+.top-products .btn-wrapper{
+    margin-top: 2rem;
+    
+}
+.top-products .btn-wrapper .btn{
+    padding: 0.70rem;
+}
+/* ---------------------------------------ABOUT MEAL STYLING-------------------------------- */
+section.about-meal img{
+    width: 85%;
+}
+section.about-meal h2{
+    font-family: 'Raleway-bold';
+    font-size: 1.4rem;
+    color: var(--secondary);
+    margin-bottom: 2rem;
+    line-height: 1.3;
+
+}
+section.about-meal p{
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+/* .about-meal .about-meal-wrap{
+    margin-top: 2rem;
+} */
+/* --------------------------------------OUR SERVICES STYLING-------------------------------- */
+section.our-services{
+    background: var(--light);
+    position: relative;
+    z-index: 0;
+}
+section.our-services .card-wrapper{
+    margin-right: -2rem;
+    margin-top: 8rem;
+}
+section.our-services .card-wrapper .service-card{
+    background: var(--heaven);
+    padding: 2rem;
+    padding-top: 4rem;
+    margin-right: 2rem;
+    position:relative;
+    border-radius: 4px;
+}
+section.our-services .card-wrapper .service-card .icon{
+    position: absolute;
+    top: -15%;
+    left: 50%;
+    transform: translateX(-50%);
+    /* transform: translate(-50%,20%); */
+}
+section.our-services .card-wrapper .service-card h2{
+    font-family: 'Raleway-Bold';
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+section.our-services .card-wrapper .service-card p{
+    line-height: 1.6rem;
+    margin-bottom: 1rem;
+}
+/* ---------------------------------BIG DEAL STYLING--------------------------------------  */
+section.big-deal{
+    background: linear-gradient(
+        rgba(35,43,56,0.9),
+        rgba(35,43,56,0.9)
+    ),url(../images/food-table.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+section.big-deal .timer{
+    margin-right: -2rem;
+    margin-bottom: 2rem;
+}
+section.big-deal .timer > div{
+    margin-right: 2rem;
+    background: var(--primary);
+    width: 150px;
+    height: 150px;
+    border-radius: 4px;
+    display: flex;
+                                          /* THIS IS NEW */
+    flex-direction: column;
+    justify-content: center;
+}
+section.big-deal .timer > div span:first-child{
+    font-family: 'Ralwway-semibold';
+    font-size: 2.5rem;
+    color: var(--heaven);
+    margin-bottom: 0.05rem;
+}
+section.big-deal .timer > div span:last-child{
+    color: var(--heaven);
+    font-family: 'Raleway-medium';
+
+}
+/* -------------------------------LATEST NEWS STYLING----------------------------------- */
+section.latest-news{
+    background: var(--light);
+    position: relative;
+    z-index: 0;
+}
+section.latest-news .article-wrapper{
+    margin-right: -2rem;
+}
+section.latest-news .article-wrapper .card{
+    margin-right: 2rem;
+    background: var(--heaven);
+    border-radius: 4px;
+
+}
+section.latest-news .article-wrapper .card .card-content{
+    padding: 2rem;
+}
+section.latest-news .article-wrapper .card .card-content .post-meta{
+    margin-bottom: 1rem;
+}
+section.latest-news .article-wrapper .card .card-content .post-meta .comment-count{
+    margin-left: 1rem;
+}
+section.latest-news .article-wrapper .card .card-content h2{
+    font-family: 'Raleway-bold';
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+section.latest-news .article-wrapper .card .card-content p{
+    line-height: 1.6;
+}
+section.latest-news .article-wrapper .card > div img{
+    width: 100%;
+}
+section.latest-news > div button{
+    margin-top: 1rem;
+}
+/* -----------------------------------------------SUBSCRIBE STYLING-------------------------------------------- */
+section.subscribe{
+    background: var(--primary);
+}
+section.subscribe .container > div:first-child img{
+    width: 90%;
+
+}
+section.subscribe .container > div:last-child h1{
+    font-family: 'Raleway-bold';
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+
+}
+section.subscribe .container > div:last-child p{
+    font-family: 'Raleway-medium';
+    line-height: 1rem;
+    margin-bottom: 1.5rem;
+}
+section.subscribe .container > div:last-child .input-wrap{
+    background: var(--heaven);
+    padding: 0.3rem;
+    border-radius: 4px;
+
+}
+section.subscribe .container > div:last-child .input-wrap input{
+    width: 100%;
+    border: none;
+    padding: 0rem 1rem;
+    font-size: 1rem;
+
+}
+                                                  /* THIS IS NEW */
+section.subscribe .container > div:last-child .input-wrap input:focus{
+    outline: none;
+}
+section.subscribe .container > div:last-child .input-wrap button{
+    padding: 0.8rem 2rem;
+    /* border: var(--primary); */
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+/* ----------------------------------------------CONTACT US STYLING------------------------------------------- */
+section.contact-us{
+    padding-top: 0px;
+    padding-bottom: 0px;
+
+}
+section.contact-us .contact-info-wrapper{
+    padding: 4rem 0rem;
+    flex: 1;
+}
+section.contact-us .contact-info-wrapper .contact-info > div > div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+section.contact-us .contact-info-wrapper .contact-info > div > div img{
+    margin-right: 1rem;
+}
+section.contact-us .contact-info-wrapper .contact-info > div > div > div span:first-child{
+    display: block;
+    font-family:'Raleway-bold' ;
+    margin-bottom: 0.25rem;
+
+}
+section.contact-us .map{
+    flex: 1;
+}
+/* ----------------------------------------FOOTER STYLING ABOUT US,QUICK LINKS,FOLLOW US,INSTAGRAM---------------------------------------------------- */
+footer{
+    background-color: var(--footer);
+    padding: 3rem 0rem;
+}
+footer .container{
+    color: var(--heaven);
+}
+footer .box{
+    margin-right: 2rem;
+    text-align: center;
+}
+footer .box:nth-child(3){
+    text-align: left;
+}
+footer .box:nth-child(3) > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+footer .box:nth-child(3) h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer .container .box h3{
+    font-family: 'Raleway-';
+    border-bottom: 2px solid var(--primary);
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+footer .container .box p{
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+footer .container .box ul{
+    list-style: none;
+}
+footer .container .box ul li{
+    margin-bottom: 1.5rem;
+}
+footer .container .box ul li a{
+    color: var(--heaven);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+footer .container .box ul li a:hover{
+    color: var(--primary);
+
+}
+footer .container .box:nth-child(3) ul li a img{
+    margin-right: 0.5rem;
+}
+footer .container .box.instagram-api img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+footer .container .box.instagram-api .post-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer .container .box.instagram-api .post-wrapper > div{
+    width: 32.08333%;
+    margin-bottom: 0.5rem;
+    margin-right: -0.5rem;
+}
+/* --------------------------------------COPYRIGHT FOOTER STYLING--------------------------------------------- */
+footer.copyright{
+    background: var(--secondary);
+    padding: 1rem 0rem;
+    font-size: 0.8rem;
+}
+footer.copyright > div{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: var(--heaven);
+}
+footer.copyright > div a{
+    text-decoration: none;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------STYLIING OF NAVBAR--------------------------------------- */
+nav .top{
+    padding:1.5rem 0rem ;
+}
+
+nav .top .contact h5 , nav .top .time h5{
+    font-family: 'Raleway-Black';
+    margin-bottom: 0.25rem;
+}
+nav .top .contact h6 , nav .top .time h6{
+    font-family: 'Raleway-medium';
+    letter-spacing: 0.055rem;
+    font-size: 0.75rem;
+    color: var(--ternary);
+}
+nav .top .contact img , nav .top .time img{
+    margin-right: 1rem;
+}
+nav .navbar .container a{
+    color: var(--secondary);
+    text-decoration: none;
+    font-family: 'Raleway-semibold';
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+                                                    /* THIS IS NEW                                            */
+    transition:all 0.3s ease;  
+}
+nav .navbar .container a.active{
+    background: var(--primary);
+    color: var(--pure);
+
+}
+nav .navbar .container a:hover{
+    background-color: var(--primary);
+    color: var(--pure);
+}

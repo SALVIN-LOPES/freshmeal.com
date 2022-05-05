@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOOD STORE | THE FOOD MARKETPLACE</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class='topbar'>
+        <div class="container flex justify-between items-center">
+            <div class='icons'>
+                <a href="#"><img src="./icons/facebook.svg" alt="Facebook icon"></a>
+                <a href="#"><img src="./icons/twitter.svg" alt="twitter icon"></a>
+                <a href="#"><img src="./icons/google.svg" alt="google icon"></a>
+                <a href="#"><img src="./icons/instagram.svg" alt="instagram icon"></a>
+                <a href="#"><img src="./icons/search.svg" alt="search icon"></a>
+            </div>
+            <div class='auth flex items-center'>
+                <div>
+                    <img src="./icons/user-icon.svg" alt="user-icon">
+                    <a href="#">Log in</a>
+                </div>
+                <span class='divider'>|</span>
+                <div>
+                    <img src="./icons/edit.svg" alt="Register-icon">
+                    <a href="#">Register Now</a>
+                </div>
+                <span class='divider'>|</span>
+                <div>
+                    <img src="./icons/cart.svg" alt="cart-icon">
+                    <a href="#">0 Items -($0.00)</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div class="top">
+            <div class="container flex justify-between">
+                <div class='contact flex items-center'>
+                    <img src="./icons/phone.svg" alt="phone icon">
+                    <div>
+                        <h5>Call US : (+84) 123 456 789</h5>
+                        <h6>E-mail : support@freemeal.com</h6>
+                    </div>
+                </div>
+                <div class="branding">
+                    <img src="./icons/logo.svg" alt="branding logo">
+                </div>
+                <div class="time flex items-center">
+                    <img src="./icons/clock.svg" alt="clock icon">
+                    <div>
+                        <h5>Working Hours</h5>
+                        <h6>Mon - Sat (8:00am - 12:00am)</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar magic-shadow">
+            <div class="container flex justify-center">
+                <a href="#" class="active">Home</a>
+                <a href="#">About us</a>
+                <a href="#">Product</a>
+                <a href="#">Blog</a>
+                <a href="#">Shop</a>
+                <a href="#">Service</a>
+                <a href="#">Gallery</a>
+                <a href="#">Contact us</a>
+            </div>
+        </div>
+    </nav>
+    <header class="hero flex items-center">
+        <div class="container">
+            <div class="welcome flex items-center">
+                <span>Welcome to </span>
+                <img src="./icons/logo.svg" alt="fresh meal logo">
+            </div>
+            <h1>The World Best <span>Shoping</span> Website</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium Lorem ipsum dolor sit amel</p>
+            <div>
+                <button class="btn btn-primary">Read More</button>
+                <button class="btn btn-secondary">Shop Now</button>
+            </div>
+            <div class="hero-image">
+                <img src="./images/straw.png" alt="strawberry image">
+            </div>
+        </div>
+    </header>
+    <section class="top-products">
+        <div class="container">
+            <h1 class="section-heading">Top products</h1>
+            <div class="slider">
+                <div class="food-slider">
+                    <div class="food-card magic-shadow-sm">
+                        <div class="product-image">
+                            <img src="./images/plate-1.png" alt="Plate image">
+                            <hr>
+                        </div>
+                        <div>
+                            <h2 class="text-center">Summer salad</h2>
+                            <div class="stars flex justify-center items-center">
+                                <img src="./icons/start-filled.svg" alt="stars image">
+                                <img src="./icons/start-filled.svg" alt="stars image">
+                                <img src="./icons/start-filled.svg" alt="stars image">
+                                <img src="./icons/star-grey.svg" alt="stars image">
+                                <img src="./icons/star-grey.svg" alt="stars image">
+                            </div>
+                            <div class="price text-center">$ 1.25</div>
+                            <div class="flex justify-center">
+                                <button >
+                                    <img src="./icons/cart-2.svg" alt="cart image">
+                                    <span>Add to Cart</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="product-image">
+                            <img src="./images/plate-2.png" alt="Plate image">
+                            <hr>
+                        </div>
+                        <div>
+                            <h2 class="text-center">Russian salad</h2>
+                            <div class="stars flex justify-center items-center">
+                                <img src="./icons/start-filled.svg" alt="stars image">
+                                <img src="./icons/start-filled.svg" alt="stars image">
+                                <img src="./icons/start-filled.svg" alt="stars image">
+                                <img src="./icons/star-grey.svg" alt="stars image">
+                                <img src="./icons/star-grey.svg" alt="stars image">
+                            </div>
+                            <div class="price text-center">$ 1.25</div>
+                            <div class="flex justify-center">
+                                <button >
+                                    <img src="./icons/cart-2.svg" alt="cart image">
+                                    <span>Add to Cart</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="product-image">
+                            <img src="./images/plate-3.png" alt="Plate image">
+                            <hr>
+                        </div>
+                        <div>
+                            <h2 class="text-center">Greek salad</h2>
+                            <div class="stars flex justify-center items-center">
+                                <img src="./icons/start-filled.svg" alt="stars image">
+                                <img src="./icons/start-filled.svg" alt="stars image">
+                                <img src="./icons/start-filled.svg" alt="stars image">
+                                <img src="./icons/star-grey.svg" alt="stars image">
+                                <img src="./icons/star-grey.svg" alt="stars image">
+                            </div>
+                            <div class="price text-center">$ 1.25</div>
+                            <div class="flex justify-center">
+                                <button >
+                                    <img src="./icons/cart-2.svg" alt="cart image">
+                                    <span>Add to Cart</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="product-image">
+                            <img src="./images/plate-2.png" alt="Plate image">
+                            <hr>
+                        </div>
+                        <div>
+                            <h2 class="text-center">Cottage pie</h2>
+                            <div class="stars flex justify-center items-center">
+                                <img src="./icons/start-filled.svg" alt="stars image">
+                                <img src="./icons/start-filled.svg" alt="stars image">
+                                <img src="./icons/start-filled.svg" alt="stars image">
+                                <img src="./icons/star-grey.svg" alt="stars image">
+                                <img src="./icons/star-grey.svg" alt="stars image">
+                            </div>
+                            <div class="price text-center">$ 1.25</div>
+                            <div class="flex justify-center">
+                                <button >
+                                    <img src="./icons/cart-2.svg" alt="cart image">
+                                    <span>Add to Cart</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center btn-wrapper flex items-center justify-center">
+                <button class="btn btn-secondary">View More</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-meal">
+        <div class="container">
+            <h1 class="section-heading">About Fresh Meal</h1>
+            <div class="about-meal-wrap flex">
+                <div class="flex-1">
+                    <img src="./images/yogurt.png" alt="yogurt image">
+                </div>
+                <div class="flex-1">
+                    <h2>Freshmeal is a long established fact that a reader will be distracted.</h2>
+                    <p>Contrary to popular belief.Lorem Ipsum is not simply random text.It has roots in the piece of classical latin litrature from 45 BC .making it over 2000 years old.Richard McClintock,a latin professor at Hampden Sydney College in Virginia. The Standard chunk ok lorem ipsum used since the 1500is reproduced below for those interested.</p>
+                    <button class="btn btn-secondary">Read More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="our-services">
+        <div class="container">
+            <h1 class="section-heading">Our Services</h1>
+            <div class="card-wrapper flex">
+                <div class="service-card text-center magic-shadow-sm">
+                    <img class='icon' src="./icons/transport.svg" alt="Home Delivery image">
+                    <h2>Free Home Delivery</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda vel ipsam neque impedit debitis quis!</p>
+                    <button class="btn btn-secondary">Read More</button>
+                </div>
+                <div class="service-card text-center magic-shadow-sm">
+                    <img class='icon' src="./icons/bag.svg" alt="bag image">
+                    <h2 class="text-primary">30 Days Return Services</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda vel ipsam neque impedit debitis quis!</p>
+                    <button class="btn btn-primary">Read More</button>
+                </div>
+                <div class="service-card text-center magic-shadow-sm">
+                    <img class='icon' src="./icons/usd.svg" alt="usd image">
+                    <h2>Money Back Guaranted</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda vel ipsam neque impedit debitis quis!</p>
+                    <button class="btn btn-secondary">Read More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="big-deal">
+        <div class="container">
+            <h1 class='section-heading text-pure'>Big Deals Of The Week</h1>
+            <div class="timer flex items-center justify-center text-center">
+                <div>
+                    <span>02</span>
+                    <span>Days</span>
+                </div>
+                <div>
+                    <span>24</span>
+                    <span>Hours</span>
+                </div>
+                <div>
+                    <span>55</span>
+                    <span>Minutes</span>
+                </div>
+                <div>
+                    <span>58</span>
+                    <span>Seconds</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="latest-news">
+        <div class="container">
+            <h1 class="section-heading">Latest News From Blog</h1>
+            <div class="article-wrapper flex">
+                <div class="card magic-shadow-sm">
+                    <div>
+                        <img src="./images/donut.jpg" alt="cookie image">
+                    </div>
+                    <div class="card-content">
+                        <div class="post-meta flex items-center justify-between">
+                            <span>July 10, 2021</span>
+                            <div>
+                                <span>Posted by <strong>FreshMeal</strong></span>
+                                <span class="comment-count">120 Comments</span>
+                            </div>
+                        </div>
+                        <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis culpa excepturi a enim nostrum maiores ex blanditiis officia quibusdam ab.</p>
+                    </div>
+                </div>
+                <div class="card magic-shadow-sm">
+                    <div>
+                        <img src="./images/coffee.jpg" alt="cookie image">
+                    </div>
+                    <div class="card-content">
+                        <div class="post-meta flex items-center justify-between">
+                            <span>August 20, 2021</span>
+                            <div>
+                                <span>Posted by <strong>FreshMeal</strong></span>
+                                <span class="comment-count">200 Comments</span>
+                            </div>
+                        </div>
+                        <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis culpa excepturi a enim nostrum maiores ex blanditiis officia quibusdam ab.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-center justify-center">
+                <button class="btn btn-secondary">View All</button>
+            </div>
+        </div>
+    </section>
+    <section class="subscribe">
+        <div class="container flex items-center">
+            <div class="flex-1">
+                <img src="./images/rasberry.png" alt="rasberry image">
+            </div>
+            <div class="flex-1">
+                <h1>Subscribe to your newsletter</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum eligendi molestiae, cum corrupti fugit eius.</p>
+                <div class="input-wrap flex">
+                    <input type="text" placeholder="email@freshmeal.com">
+                    <button class="btn btn-secondary">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact-us flex">
+        <div class="contact-info-wrapper flex-1">
+            <h1 class="section-heading">Contact us</h1>
+            <div class="contact-info flex justify-center items-center">
+                <div>
+                    <div >
+                        <img src="./icons/phone-2.svg" alt="phone-2">
+                        <div>
+                            <span>Call US:</span>
+                            <span>(+81) 123 456 789</span>
+                        </div>
+                    </div>
+                    <div >
+                        <img src="./icons/bag-2.svg" alt="phone-2">
+                        <div>
+                            <span>E-mail:</span>
+                            <span>support@freshmeal.com</span>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./icons/clock-2.svg" alt="phone-2">
+                        <div>
+                            <span>Working Hours:</span>
+                            <span>Mon-Sat (8:00am - 12:00am)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10731137.80010985!2d-93.70651518576767!3d48.95526259105919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05b25f5113af%3A0x70f8425629621e09!2sOntario%2C%20Canada!5e0!3m2!1sen!2sin!4v1623223177549!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+    </section>
+    <footer>
+        <div class="container flex">
+            <div class="box flex-1">
+                <h3>About Us</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque necessitatibus mollitia saepe, modi quasi alias.</p>
+                <button class="btn btn-secondary">Read More</button>
+            </div>
+            <div class="box flex-1">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li>
+                        <a href="#" alt='Home link'>Home</a>
+                    </li>
+                    <li>
+                        <a href="#" alt='About us link'>About us</a>
+                    </li>
+                    <li>
+                        <a href="#" alt='Products link'>Products</a>
+                    </li>
+                    <li>
+                        <a href="#" alt='Blog link'>Blog</a>
+                    </li>
+                    <li>
+                        <a href="#" alt='Services link'>Services</a>
+                    </li>
+                    <li>
+                        <a href="#" alt='Gallery link'>Gallery</a>
+                    </li>
+                    <li>
+                        <a href="#" alt='Contact us link'>Contact us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="box flex-1">
+                <h3>Follow Us</h3>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="./icons/facebook.svg" alt="facebook image">
+                                <span>Facebook</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./icons/twitter.svg" alt="twitter image">
+                                <span>Twitter</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./icons/google.svg" alt="google image">
+                                <span>Google</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./icons/instagram.svg" alt="instagram image">
+                                <span>Instagram</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="box flex-1 instagram-api">
+                <h3>Instagram</h3>
+                <div class="post-wrapper">
+                    <div>
+                        <img src="./images/food-table.jpg" alt="food-table">
+                    </div>
+                    <div>
+                        <img src="./images/food-table.jpg" alt="food-table">
+                    </div>
+                    <div>
+                        <img src="./images/food-table.jpg" alt="food-table">
+                    </div>
+                    <div>
+                        <img src="./images/food-table.jpg" alt="food-table">
+                    </div>
+                    <div>
+                        <img src="./images/food-table.jpg" alt="food-table">
+                    </div>
+                    <div>
+                        <img src="./images/food-table.jpg" alt="food-table">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <footer class="copyright">
+        <div>
+            Copyright &copy; 2021 | All rights reserved by<a href="#"><span class="text-primary"> #themakerofthesite</span></a>
+
+        </div>
+    </footer>
+    
+    
+    
+    
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src= './js/app.js'></script>
+</body>
+</html>
